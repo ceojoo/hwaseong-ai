@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b2a6f">
+<title>실습 3 · 위임장 PDF</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><div class="eyebrow"><span>화성시 AI 실무 교육</span><span>2026. 10. 26.</span></div><div class="hero"><div class="num">03</div><div><p class="kicker">PRACTICE 03</p><h1>위임장 PDF 작성</h1><p class="lead">서식 파일을 넘기고, 필요한 내용은 AI가 먼저 묻게 합니다.</p></div></div><nav class="tabs" aria-label="실습 이동"><a href="p1.html">실습 1</a><a href="p2.html">실습 2</a><a href="p3.html" aria-current="page">실습 3</a></nav></div></header>
+<main class="wrap">
+<ol class="steps">
+<li class="step"><span class="dot">1</span><div><h2>위임장 내려받기</h2><p class="desc">미리보기만 보지 말고 꼭 <b>저장</b>해 주세요.</p>
+<div class="card"><div class="file"><div class="ftype pdf">PDF</div><div class="finfo"><b>위임장.pdf</b><span>민원 처리에 관한 법률 시행규칙 별지 제3호서식</span></div></div>
+<a class="btn accent" href="files/proxy_form.pdf" download="위임장.pdf"><svg class="i " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg><span>위임장 PDF 다운로드</span></a></div>
+</div></li>
+<li class="step"><span class="dot">2</span><div><h2>요청문 보내기</h2><p class="desc">ChatGPT 새 대화에 PDF를 첨부하고 이 한 문장만 보냅니다.</p>
+<script type="text/plain" id="req3">
+이 위임장 작성해 PDF 파일로 만들어줘. 필요한 내용은 나에게 질문해줘.
+</script>
+<div class="card"><div class="prompt-head"><span class="chip">요청문</span><span class="count">41자</span></div>
+<p class="prompt-body">이 위임장 작성해 PDF 파일로 만들어줘. 필요한 내용은 나에게 질문해줘.</p>
+<button class="btn " data-copy="req3"><svg class="i i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="lbl">요청문 복사</span></button>
+</div>
+</div></li>
+<li class="step"><span class="dot">3</span><div><h2>가상정보로만 답하기</h2><p class="desc">AI가 물으면 아래 정보로만 답해 주세요.</p>
+<div class="card"><dl class="kv"><div><dt>위임하는 사람</dt><dd>홍길동<span><em class="nw">1990-01-15</em> · <em class="nw">010-0000-0001</em></span></dd></div><div><dt>주소</dt><dd>경기도 화성시 교육로 12<span><em class="nw">교육용 가상 주소</em></span></dd></div><div><dt>위임받는 사람</dt><dd>김하늘<span><em class="nw">1992-07-08</em> · <em class="nw">010-0000-0002</em> · <em class="nw">관계: 동료</em></span></dd></div><div><dt>주소</dt><dd>경기도 화성시 실습로 34<span><em class="nw">교육용 가상 주소</em></span></dd></div><div><dt>민원내용</dt><dd>지방세 납세증명서 한 부<span><em class="nw">신청 및 교부</em></span></dd></div><div><dt>작성일</dt><dd>2026-10-26</dd></div></dl></div>
+</div></li>
+</ol>
+<div class="note warn"><svg class="i " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5M12 17.5v.01"/></svg><div><b>실제 정보는 넣지 마세요</b><p>본인이나 가족의 생년월일·주소·전화번호는 외부 AI에 넣지 않습니다. 서명과 최종 확인은 사람이 합니다.</p></div></div>
+<section class="aside"><h3>파일이 안 나올 때</h3><p class="desc">같은 요청을 반복하지 말고 이 문장을 보내세요.</p>
+<script type="text/plain" id="backup">
+이 내용을 원본 위임장 서식에 입력한 PDF 파일로 만들어 주세요. 내려받을 수 있는 파일로 첨부해 주세요.
+</script>
+<div class="card"><div class="prompt-head"><span class="chip">백업 요청문</span><span class="count">60자</span></div>
+<p class="prompt-body">이 내용을 원본 위임장 서식에 입력한 PDF 파일로 만들어 주세요. 내려받을 수 있는 파일로 첨부해 주세요.</p>
+<button class="btn ghost" data-copy="backup"><svg class="i i-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="i i-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="lbl">백업 요청문 복사</span></button>
+</div>
+</section>
+</main>
+<footer class="wrap">교육용 실습 페이지 · 실제 개인정보는 입력하지 마세요</footer>
+<script src="copy.js"></script>
+</body>
+</html>
